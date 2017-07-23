@@ -260,7 +260,7 @@ What I've learned
 Now I have a better idea of which other distributions have Python 3.6 😀
 
 I learned how many linux distributions are out there. Before this, I've only
-heard of `fedora`, `debian`, and `ubuntu` 😅😝
+heard of ``fedora``, ``debian``, and ``ubuntu`` 😅😝
 
 I didn't know how to retrieve the values from select options using beautifulsoup,
 so I looked it up and learned new trick.

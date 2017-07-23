@@ -27,7 +27,7 @@ Requires Python 3.6.
 Dependencies:
 
 - Python 3.6
-- `requests <http://docs.python-requests.org/en/master/>` library
+- `requests <http://docs.python-requests.org/en/master/>`_ library
 - `Beautiful Soup <https://www.crummy.com/software/BeautifulSoup/>`_
 
 

@@ -3,7 +3,7 @@ About
 
 Run the script ``py_versions_and_distros.py`` to find out which Linux distributions
 have Python 3.6. It **downloads** resources data from `Distrowatch
-<http://http://distrowatch.com//>`_.
+<http://distrowatch.com/>`_.
 
 I don't know if the result is accurate at all. Perhaps someone else can verify
 it.

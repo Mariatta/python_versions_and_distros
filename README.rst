@@ -3,7 +3,7 @@ About
 
 Run the script ``py_versions_and_distros.py`` to find out which Linux distributions
 have Python 3.6. It **downloads** resources data from `Distrowatch
-<http://distrowatch.com/>`_.
+<https://distrowatch.com/>`_.
 
 I don't know if the result is accurate at all. Perhaps someone else can verify
 it.
@@ -27,7 +27,7 @@ Requires Python 3.6.
 Dependencies:
 
 - Python 3.6
-- `requests <http://docs.python-requests.org/en/master/>`_ library
+- `requests <https://docs.python-requests.org/en/master/>`_ library
 - `Beautiful Soup <https://www.crummy.com/software/BeautifulSoup/>`_
 
 
@@ -125,7 +125,7 @@ if there are other Linux distributions out there that also have Python 3.6.
 I asked on `Twitter <https://twitter.com/mariatta/status/885704308775297024>`_
 about it.
 
-I was made aware of `distrowatch <http://distrowatch.com>`_ website,
+I was made aware of `distrowatch <httpis://distrowatch.com>`_ website,
 and also about `a script <https://github.com/mlouielu/python-linux-distro-list>`_
 for scraping the website to find out which Python is shipped in the Linux distros.
 
@@ -206,7 +206,7 @@ To get all the values of the select options using beautifulsoup::
 
 
 Next, to find out the released versions of each distributions.  Looking at
-`fedora 26 <http://distrowatch.com/table-mobile.php?distribution=fedora>`_'s
+`fedora 26 <https://distrowatch.com/table-mobile.php?distribution=fedora>`_'s
 distrowatch page, there is a table that compares the different releases:
 
 =================  ==========  ==========  ==========

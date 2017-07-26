@@ -27,7 +27,7 @@ Requires Python 3.6.
 Dependencies:
 
 - Python 3.6
-- `requests <https://docs.python-requests.org/en/master/>`_ library
+- `requests <http://docs.python-requests.org/en/master/>`_ library
 - `Beautiful Soup <https://www.crummy.com/software/BeautifulSoup/>`_
 
 
@@ -125,7 +125,7 @@ if there are other Linux distributions out there that also have Python 3.6.
 I asked on `Twitter <https://twitter.com/mariatta/status/885704308775297024>`_
 about it.
 
-I was made aware of `distrowatch <httpis://distrowatch.com>`_ website,
+I was made aware of `distrowatch <https://distrowatch.com>`_ website,
 and also about `a script <https://github.com/mlouielu/python-linux-distro-list>`_
 for scraping the website to find out which Python is shipped in the Linux distros.
 

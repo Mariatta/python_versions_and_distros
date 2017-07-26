@@ -65,7 +65,7 @@ def process_distro(distribution):
 def process_resource(distribution, dist_version):
     """
     Download the resources at
-    http://distrowatch.com/resource/{distribution}/{distribution}-{dist_version}.txt
+    https://distrowatch.com/resource/{distribution}/{distribution}-{dist_version}.txt
     It lists all the packaged shipped for the specified distribution and release.
 
     Python 3.6 is possibly identified using one of the following patterns:
@@ -78,7 +78,7 @@ def process_resource(distribution, dist_version):
         python-3.6*     e.g arch current: python-3.6.2-1-i686.pkg.tar.xz
         python3.6*      e.g parrotsecurity 3.7: python3.6^3.6.2~rc1-1
     """
-    resource_url = f"http://distrowatch.com/resource/{distribution}/{distribution}-{dist_version}.txt"
+    resource_url = f"https://distrowatch.com/resource/{distribution}/{distribution}-{dist_version}.txt"
     resource_file_path = f"downloaded_resources_data/{distribution}-{dist_version}.txt"
 
     scrape_webpage(resource_url, resource_file_path)
@@ -139,9 +139,9 @@ def print_report():
 
 def main():
     init_csv()
-    scrape_webpage('http://distrowatch.com/', "downloaded_data/distrowatch.html")
+    scrape_webpage('https://distrowatch.com/', "downloaded_data/distrowatch.html")
     for distro in get_distros():
-        distro_url = f"http://distrowatch.com/table-mobile.php?distribution={distro}"
+        distro_url = f"https://distrowatch.com/table-mobile.php?distribution={distro}"
         dest_filename = f"downloaded_data/{distro}.html"
         scrape_webpage(distro_url, dest_filename)
         process_distro(distro)

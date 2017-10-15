@@ -1,0 +1,21 @@
+language: python
+
+python:
+ - 3.6
+
+sudo: false
+
+install:
+ - pip install pyflakes pycodestyle
+ - pip install -r requirements.txt
+
+script:
+ # Static analysis
+ - pyflakes .
+ - pycodestyle --statistics --count .
+
+ # Test run
+ - python3 -m py_versions_and_distros
+
+matrix:
+  fast_finish: true

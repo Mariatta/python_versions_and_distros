@@ -3,7 +3,7 @@ import os
 import csv
 from datetime import datetime
 from bs4 import BeautifulSoup
-
+from pathlib import Path
 
 CSV_FIELDNAMES = ['distribution', 'dist_version', 'python_version', 'resource']
 PY_3_6_VERSIONS = ["3.6.2",
@@ -25,6 +25,7 @@ def scrape_webpage(source_url, destination_filename):
     Check if we have downloaded <source_url> today.
     If not yet, then download it
     """
+    os.makedirs(Path(destination_filename).parent, exist_ok=True)
     if not os.path.exists(destination_filename):
         fetch_webpage(source_url, destination_filename)
 

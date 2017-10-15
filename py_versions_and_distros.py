@@ -71,7 +71,7 @@ def process_resource(distribution, dist_version, py_ver):
     It lists all the packaged shipped for the specified distribution
     and release.
 
-    Python 3.6 is possibly identified using one of the following patterns:
+    Python 3.x is possibly identified using one of the following patterns:
     These are only my own guess and assumption.
 
         python3 3.6*    e.g. antergos 17.6: python 3.6.1-1
@@ -92,8 +92,11 @@ def process_resource(distribution, dist_version, py_ver):
     search_patterns = [f"python3 {py_ver}",
                        f"python3^{py_ver}",
                        f"python3-{py_ver}",
+
                        f"python{py_ver}",
+
                        f"python {py_ver}",
+                       f"python^{py_ver}",
                        f"python-{py_ver}"]
     with open(resource_file_path) as file:
         for line in file.readlines():

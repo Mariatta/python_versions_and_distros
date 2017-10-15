@@ -53,6 +53,8 @@ Output on Oct 15, 2017
    antergos 17.10: Python 3.6.2
    arch current: Python 3.6.2
    archlabs 2017.09: Python 3.6.2
+   archlabs 5.0: Python 3.6.1
+   artix 2017.08.08: Python 3.6.2
    blackarch 2017.08.30: Python 3.6.2
    bluestar 4.13.3: Python 3.6.2
    cucumber 1.0: Python 3.6.0
@@ -78,6 +80,7 @@ Output on Oct 15, 2017
    nixos 16.09: Python 3.6.0
    nst 26-9267: Python 3.6.2
    nutyx packages: Python 3.6.2
+   nutyx 9.1: Python 3.6.2
    openbsd 6.2: Python 3.6.2
    openbsd 6.1: Python 3.6.0
    parrotsecurity 3.8: Python 3.6.2
@@ -93,7 +96,8 @@ Output on Oct 15, 2017
    void current: Python 3.6.3
    xubuntu 17.10-beta2: Python 3.6.2
    ====================================
-   42 distros with Python 3.6
+   45 distros with Python 3.6
+
 
 
 Output on July 17, 2017

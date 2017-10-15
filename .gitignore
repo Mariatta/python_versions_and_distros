@@ -1,4 +1,4 @@
 downloaded_data/
 downloaded_resources_data/
 venv/
-python_distros.csv
+python_distros_*.csv

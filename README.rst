@@ -2,8 +2,9 @@ About
 =====
 
 Run the script ``py_versions_and_distros.py`` to find out which Linux distributions
-have Python 3.6. It **downloads** resources data from `Distrowatch
-<https://distrowatch.com/>`_.
+have Python 3.x. It **downloads** resources data from `Distrowatch
+<https://distrowatch.com/>`_, and may take 15-20 minutes to run (depends on your
+internet speed).
 
 I don't know if the result is accurate at all. Perhaps someone else can verify
 it.
@@ -22,7 +23,7 @@ it contains a package with the following patterns::
 Setting up
 ==========
 
-Requires Python 3.6.
+Requires Python >= 3.6.
 
 Dependencies:
 

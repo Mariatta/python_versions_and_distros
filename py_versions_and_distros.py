@@ -82,8 +82,10 @@ def process_resource(distribution, dist_version, py_ver):
         python3.6*      e.g parrotsecurity 3.7: python3.6^3.6.2~rc1-1
 
     """
-    resource_url = f"https://distrowatch.com/resource/{distribution}/{distribution}-{dist_version}.txt"
-    resource_file_path = f"downloaded_resources_data/{distribution}-{dist_version}.txt"
+    resource_url = (Path("https://distrowatch.com/resource") /
+                    f"{distribution}/{distribution}-{dist_version}.txt")
+    resource_file_path = (Path("downloaded_resources_data") /
+                          f"{distribution}-{dist_version}.txt")
 
     scrape_webpage(resource_url, resource_file_path)
 
@@ -144,7 +146,8 @@ def print_report():
             count = 0
             for row in csvreader:
                 if count > 0:
-                    print(f"{row['distribution']} {row['dist_version']}: Python {row['python_version']}")
+                    print(f"{row['distribution']} {row['dist_version']}: "
+                          f"Python {row['python_version']}")
                 count += 1
             print("="*36)
             print(f"{count-1} distros with Python {py_ver}")
@@ -157,11 +160,11 @@ def main():
     scrape_webpage('https://distrowatch.com/',
                    "downloaded_data/distrowatch.html")
     for distro in get_distros():
-        distro_url = f"https://distrowatch.com/table-mobile.php?distribution={distro}"
+        distro_url = (
+            f"https://distrowatch.com/table-mobile.php?distribution={distro}")
         dest_filename = f"downloaded_data/{distro}.html"
         scrape_webpage(distro_url, dest_filename)
         process_distro(distro)
-
 
     print_report()
 

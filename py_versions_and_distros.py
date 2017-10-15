@@ -83,7 +83,7 @@ def process_resource(distribution, dist_version, py_ver):
         python3.6*      e.g parrotsecurity 3.7: python3.6^3.6.2~rc1-1
 
     """
-    resource_url = (Path("https://distrowatch.com/resource") /
+    resource_url = ("https://distrowatch.com/resource/"
                     f"{distribution}/{distribution}-{dist_version}.txt")
     resource_file_path = (Path("downloaded_resources_data") /
                           f"{distribution}-{dist_version}.txt")

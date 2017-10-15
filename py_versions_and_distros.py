@@ -9,6 +9,7 @@ CSV_FIELDNAMES = ['distribution', 'dist_version', 'python_version', 'resource']
 PY_VER_MAP = {py_ver: [f'{py_ver}.{j}' for j in range(15)]
               for py_ver in ('3.4', '3.5', '3.6', '3.7')
               }
+DEBUG = False
 
 
 def fetch_webpage(source_url, destination_filename):
@@ -111,7 +112,13 @@ def process_resource(distribution, dist_version, py_ver):
                                   "dist_version": dist_version,
                                   "python_version": version,
                                   "resource": line.strip()}, py_ver)
-                    return
+                    break
+                else:
+                    if DEBUG:
+                        print(f"failed version {resource_file_path}: {line}")
+        else:
+            if DEBUG:
+                print(f"failed find python{py_ver} in {resource_file_path}")
 
 
 def init_csv():

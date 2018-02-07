@@ -14,8 +14,5 @@ script:
  - pyflakes .
  - pycodestyle --statistics --count .
 
- # Test run
- - python3 -m py_versions_and_distros
-
 matrix:
   fast_finish: true

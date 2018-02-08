@@ -10,13 +10,15 @@ PY_VER_MAP = {py_ver: [f'{py_ver}.{j}' for j in range(15)]
               for py_ver in ('3.4', '3.5', '3.6', '3.7')
               }
 DEBUG = False
+USER_AGENT = ('Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 '
+              '(KHTML, like Gecko) Chrome/41.0.2228.0 Safari/537.36')
 
 
 def fetch_webpage(source_url, destination_filename):
     """
     Download <source_url> and save it as <destination_filename>
     """
-    r = requests.get(source_url)
+    r = requests.get(source_url, headers={'User-Agent': USER_AGENT})
     with open(destination_filename, 'w+') as file:
         file.write(r.text)
 

@@ -16,7 +16,7 @@ before_script:
  - flake8 --statistics --show-source --count .
 
 script:
- - python3 -m py_versions_and_distros
+ - travis_wait 60 python3 -m py_versions_and_distros
 
 matrix:
  fast_finish: true

@@ -7,7 +7,7 @@ from pathlib import Path
 
 CSV_FIELDNAMES = ['distribution', 'dist_version', 'python_version', 'resource']
 PY_VER_MAP = {py_ver: [f'{py_ver}.{j}' for j in range(15)]
-              for py_ver in ('3.4', '3.5', '3.6', '3.7')
+              for py_ver in ('2.5', '2.6', '2.7')
               }
 DEBUG = False
 USER_AGENT = ('Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 '

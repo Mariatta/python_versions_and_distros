@@ -231,3 +231,8 @@ Things I will not do
 - Make this script backward compatible with Python < 3.6
 
 - PEP 8 compliance
+
+Linux distributions and Python 2 topic at the Python Language Summit 2018
+=========================================================================
+
+https://lwn.net/Articles/756628/

@@ -16,4 +16,4 @@ script:
  - travis_wait 65 time python3 -m py_versions_and_distros
 
 matrix:
- fast_finish: true
+  fast_finish: true

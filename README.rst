@@ -235,4 +235,4 @@ Things I will not do
 Linux distributions and Python 2 topic at the Python Language Summit 2018
 =========================================================================
 
-https://lwn.net/Articles/756628/
+https://lwn.net/Articles/756628
